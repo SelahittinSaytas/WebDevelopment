@@ -7,27 +7,122 @@
         <meta property="og:title" content="Selahittin Saytaş | Apprentice" />
         <meta name="author" content="Selahittin Saytaş" />
         <title>LAB - Album Page V1</title>
+        <style>
+            .mainContainer{
+                margin:30px 0;
+            }
+            #albumImage{
+                text-align:center;
+            }
+            .albumDetails{
+                text-align:center;
+            }
+            .bandDetails{
+                margin:0 30px 0 30px;
+            }
+            table, tr, th, td{
+                text-align:center;
+            }
+        </style>
     </head>
     <body>
-        <header></header>
-        <article>
-            <h1>"Heroes"</h1>
-            <h2>David Bowie</h2>
-            <h3>14 October 1977</h3>
-            <p>"Heroes" is the twelfth studio album by English musician David Bowie, 
-                released on RCA Records on 14 October 1977. 
-                The second installment of his "Berlin Trilogy" recorded with Brian Eno and Tony Visconti, 
-                "Heroes" continued the ambient experiments of Bowie's previous album Low 
-                (released earlier that year) and featured the contributions of guitarist Robert Fripp. 
-                Of the three albums, it was the only one wholly recorded in Berlin.</p>
-            <h1>Band Members</h1>
-            <h3>David Bowie - Vocals, Acoustic Gutar, Harmonica</h3>
-            <h3>Earl Slick - Lead guitar</h3>
-            <h3>Mark Plati - Rhythm Guitar, Acoustic Guitar, Bas Guitar, Backing Vocals</h3>
-            <h3>Gail Ann Dorsey - Bass Guitar, Rhythm Guitar, Clarinet, Vocals</h3>
-            <h3>Sterling Campbell - Drums, Percussion</h3>
-            <h3>Mike Grason - Keyboards, Piano</h3>
-        </article>
-        <footer></footer>
+        <div class="mainContainer">
+            <header></header>
+            <article>
+                <div>
+                    <div id="albumImage">
+                        <a href="http://www.davidbowie.com/" target="_blank"><img src="img/David_Bowie_-_Heroes.png" alt="David Bowie Heroes Album Cover"></a>
+                    </div>
+                    <div class="albumDetails">
+                        <h1>"Heroes"</h1>
+                        <h2><a href="http://www.davidbowie.com/" target="_blank">"David Bowie"</a></h2>
+                        <h3>14 October 1977</h3>
+                    </div>
+                </div>
+                <hr/>
+                <!-- <p>"Heroes" is the twelfth studio album by English musician David Bowie, 
+                    released on RCA Records on 14 October 1977. 
+                    The second installment of his "Berlin Trilogy" recorded with Brian Eno and Tony Visconti, 
+                    "Heroes" continued the ambient experiments of Bowie's previous album Low 
+                    (released earlier that year) and featured the contributions of guitarist Robert Fripp. 
+                    Of the three albums, it was the only one wholly recorded in Berlin.</p> -->
+                <div class="bandDetails">
+                    <div>
+                        <div>
+                            <h1>Band Members and Producers</h1>
+                        </div>
+                        <ul>
+                            <li>David Bowie - Vocals, Acoustic Gutar, Harmonica</li>
+                            <li>Earl Slick - Lead guitar</li>
+                            <li>Mark Plati - Rhythm Guitar, Acoustic Guitar, Bas Guitar, Backing Vocals</li>
+                            <li>Gail Ann Dorsey - Bass Guitar, Rhythm Guitar, Clarinet, Vocals</li>
+                            <li>Sterling Campbell - Drums, Percussion</li>
+                            <li>Mike Grason - Keyboards, Piano</li>
+                        </ul>
+                    </div>
+                    <table border="1px"width="100%">
+                        <caption>Tracks</caption>
+                        <thead>
+                            <tr>
+                                <th>Track #</th>
+                                <th>Track Title</th>
+                                <th>Track Length</th>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>Beauty and the Beast</td>
+                                <td>3:36</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Joe the Lion</td>
+                                <td>3:07</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Heroes</td>
+                                <td>6:10</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>Sons of the Silent Age</td>
+                                <td>3:19</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>Blackout</td>
+                                <td>3:49</td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td>V-2 Schneider</td>
+                                <td>3:11</td>
+                            </tr>
+                            <tr>
+                                <td>7</td>
+                                <td>Sense of Doubt</td>
+                                <td>3:58</td>
+                            </tr>
+                            <tr>
+                                <td>8</td>
+                                <td>Moss Garden</td>
+                                <td>5:05</td>
+                            </tr>
+                            <tr>
+                                <td>9</td>
+                                <td>Neuköln</td>
+                                <td>4:35</td>
+                            </tr>
+                            <tr>
+                                <td>10</td>
+                                <td>The Secret Life of Arabia</td>
+                                <td>3:47</td>
+                            </tr>
+                        </thead>
+                    </table>
+                </div>
+            </article>
+            <footer></footer>
+        </div>
     </body>
 </html>

@@ -1,0 +1,43 @@
+body{
+    font-family: 'Raleway', sans-serif;
+}
+.mainContainer{
+    margin:33px 0;
+}
+.albumImage{
+    background:url("../img/David_Bowie_-_Heroes.png") 50% 0 no-repeat;
+    /*background-image:url("../img/David_Bowie_-_Heroes.png");
+	background-repeat:no-repeat;
+	background-position:50% 0; top center or top right/left
+    background-color:#333;*/
+    height:37vh; /*Viewport Height*/
+    text-align:center;
+    background-attachment:fixed;
+    margin-top:33px;
+    padding-top:33px;
+    padding-bottom:33px;
+}
+.albumDetails{
+    text-align:center;
+}
+.bandDetails{
+    margin:0 30px 0 30px;
+}
+#bandMP{
+    font-family: 'Oswald', sans-serif;
+    letter-spacing:7px;
+    text-transform:uppercase;
+    text-align:center;
+    opacity:0.7;
+    padding-top:33px;
+    padding-bottom:33px;
+}
+.bandMembersandProcuders{
+    font-style:italic;
+}
+table, tr, th, td{
+    text-align:center;
+}
+th{
+    background-color:#EEE;
+}

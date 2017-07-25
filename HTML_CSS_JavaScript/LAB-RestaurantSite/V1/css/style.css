@@ -1,0 +1,128 @@
+/*General Settings*/
+body{
+    font-family:;
+    color:;
+    margin:30px 0 30px 0;
+}
+.container{
+    text-align:center;
+}
+article{
+    margin-top:30px;
+    margin-bottom:30px;
+    text-align:center;
+}
+nav{
+    text-align:left;
+    margin-left:33px;
+}
+nav ul{
+    padding:0;
+    margin:auto;
+    list-style:none;
+    overflow:auto;
+}
+nav ul li{
+    float:left;
+}
+nav ul li a{
+    text-decoration:none;
+    display:block;
+    padding:10px;
+}
+
+/*Home Page*/
+.description{
+    margin-top:30px;
+    border: 2px solid #000;
+    margin-left:36%;
+    margin-right:36%;
+    overflow:auto;
+}
+#resDescription{
+    margin-left:10px;
+    margin-right:10px;
+    float:left;
+    text-align:left;    
+}
+footer{
+    margin-top:30px;
+}
+
+
+/*Menu Page*/
+.menu{
+    overflow:auto;
+    margin-left:15%;
+    margin-right:15%;
+    margin-bottom:30px;
+    text-align:center;
+}
+.firstRow, .secondRow{
+    float:left;
+    overflow:auto;
+    text-align:center;
+}
+.menu-items{
+    float:left;
+    padding:37px;
+    text-align:center;
+}
+
+
+/*Contact Us Page*/
+.contactForm{
+    text-align:center;
+}
+form{
+    text-align:center;
+    padding-bottom:30px;
+    margin-top:3%;
+    margin-left:10%;
+    margin-right:35%;
+}
+label{
+    font-weight:bold;
+    float:left;
+    width:500px;
+    text-align:right;
+    padding-right:0px;
+    clear:left;
+    margin-top:21px;
+}
+input{
+    margin-top:21px;
+    width:200px;
+    padding-left:0;
+    border:2px solid #000;
+}
+select{
+    width:100px;
+    padding-left:0;
+}
+#ReasonForInquiry{
+    margin-top:21px;
+    width:200px;
+    border:2px solid #000;
+}
+#AdditionalInformation{
+    margin-top:21px;
+    width:200px;
+    height:100px;
+    border:2px solid #000;
+}
+#HaveYouBeenToTheRestaurant{
+    width:50px;
+    border:2px solid #000;
+}
+#BestDaysToContactYou{
+    width:20px;
+    border:2px solid #000;
+}
+#SendRequest{
+    margin-left:77%;
+    width:100px;
+    border:1px solid #000;
+    border-radius:1px;
+    padding:2px 2px 2px 2px;
+}

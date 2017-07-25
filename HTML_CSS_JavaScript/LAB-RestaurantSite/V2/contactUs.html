@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        <meta property="og:title" content="Selahittin Saytaş | Apprentice" />
+        <meta name="author" content="Selahittin Saytaş" />
+        <title>Nagiya Restaurant</title>
+        <!-- Stylsheets -->
+        <link rel="stylesheet" href="css/restaurantStyles.css" />
+        <style>
+            /*Contact Us Page*/
+            .contactForm{
+                text-align:center;
+            }
+            form{
+                text-align:center;
+                padding-bottom:30px;
+                margin-top:3%;
+                margin-left:10%;
+                margin-right:35%;
+            }
+            label{
+                font-weight:bold;
+                float:left;
+                width:500px;
+                text-align:right;
+                padding-right:0px;
+                clear:left;
+                margin-top:21px;
+            }
+            input{
+                margin-top:21px;
+                width:200px;
+                padding-left:0;
+                border:2px solid #000;
+            }
+            select{
+                width:100px;
+                padding-left:0;
+            }
+            #ReasonForInquiry{
+                margin-top:21px;
+                width:200px;
+                border:2px solid #000;
+            }
+            #AdditionalInformation{
+                margin-top:21px;
+                width:200px;
+                height:100px;
+                border:2px solid #000;
+            }
+            #HaveYouBeenToTheRestaurant{
+                width:50px;
+                border:2px solid #000;
+            }
+            #BestDaysToContactYou{
+                width:20px;
+                border:2px solid #000;
+            }
+            #SendRequest{
+                margin-left:77%;
+                width:100px;
+                border:1px solid #000;
+                border-radius:1px;
+                padding:2px 2px 2px 2px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <h1>Nagiya Restaurant</h1>
+            </header>
+            <hr/>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="contactUs.html">Contact Us</a></li>
+                </ul>
+            </nav>      
+            <hr/>  
+            <article>
+                <div class="contactForm">
+                    <form action="#" method="POST">
+                        <div>
+                            <label id="NameLabel" for="Name">Name: </label>
+                            <input id="Name" name="Name" type="text" />
+                        </div>
+                        <div>
+                            <label id="EmailLabel" for="Email">Email: </label>
+                            <input id="Email" name="Email" type="email" />
+                        </div>
+                        <div>
+                            <label id="PhoneLabel"for="Phone">Phone: </label>
+                            <input id="Phone" name="Phone" type="text" />
+                        </div>
+                        <div>
+                            <label id="ReasonForInquiryLabel" for="ReasonForInquiry">Reason For Inquiry:</label>
+                            <select id="ReasonForInquiry" name="ReasonForInquiry">
+                                <option value="Catering">Catering</option>
+                                <option value="PrivateParty">Private Party</option>
+                                <option value="Feedback">Feedback</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label id="AdditionalInformationLabel"  for="AdditionalInformation">Additional Information: </label>
+                            <textarea id="AdditionalInformation" name="AdditionalInformation"></textarea>
+                        </div>
+                        <div>
+                            <label id="HaveYouBeenToTheRestaurantLabel"for="HaveYouBeenToTheRestaurant">Have you been to the restaurant? </label>
+                            <input id="HaveYouBeenToTheRestaurant" name="HaveYouBeenToTheRestaurant" type="radio" value="No" checked />No
+                            <input id="HaveYouBeenToTheRestaurant" name="HaveYouBeenToTheRestaurant" type="radio" value="Yes" />Yes
+                        </div>
+                        <div>
+                            <label id="BestDaysToContactYouLabel" for="BestDaysToContactYou">Best days to contact you: </label>
+                            <input id="BestDaysToContactYou" name="BestDaysToContactYou" type="checkbox" value="M" checked />M
+                            <input id="BestDaysToContactYou" name="BestDaysToContactYou" type="checkbox" value="T" />T
+                            <input id="BestDaysToContactYou" name="BestDaysToContactYou" type="checkbox" value="W" />W
+                            <input id="BestDaysToContactYou" name="BestDaysToContactYou" type="checkbox" value="T" />T
+                            <input id="BestDaysToContactYou" name="BestDaysToContactYou" type="checkbox" value="F" />F
+                        </div>
+                        <div id="submit-button">
+                            <input id="SendRequest" name="SendRequest" type="submit" value="Send Request" />
+                        </div>
+                    </div>
+                </form>
+            </article>
+            <hr/>
+            <footer>
+                <address>
+                    44/1, Soi Akkapat (Thonglor13)<br/>
+                    Sukhumvit 55 Rd. 10110<br/>
+                    Bangkok, Thailand<br/>
+                    +66(0)2-185-2363
+                </address>
+            </footer>
+        </div>
+    </body>
+</html>

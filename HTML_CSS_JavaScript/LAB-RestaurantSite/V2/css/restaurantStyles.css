@@ -1,0 +1,50 @@
+/*General Settings*/
+body{
+    font-family:;
+    color:;
+    margin:30px 0 30px 0;
+}
+.container{
+    text-align:center;
+}
+article{
+    margin-top:30px;
+    margin-bottom:30px;
+    text-align:center;
+}
+nav{
+    text-align:left;
+    margin-left:33px;
+}
+nav ul{
+    padding:0;
+    margin:auto;
+    list-style:none;
+    overflow:auto;
+}
+nav ul li{
+    float:left;
+}
+nav ul li a{
+    text-decoration:none;
+    display:block;
+    padding:10px;
+}
+
+/*Home Page*/
+.description{
+    margin-top:30px;
+    border: 2px solid #000;
+    margin-left:36%;
+    margin-right:36%;
+    overflow:auto;
+}
+#resDescription{
+    margin-left:10px;
+    margin-right:10px;
+    float:left;
+    text-align:left;    
+}
+footer{
+    margin-top:30px;
+}

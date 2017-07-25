@@ -1,0 +1,64 @@
+/*General Settings*/
+body{
+    font-family:'Raleway', sans-serif;
+    color:;
+    margin:30px 0 30px 0;
+}
+.container{
+    text-align:center;
+}
+header h1{
+    font-family:'Oswald', sans-serif;
+    letter-spacing:3px;
+}
+article{
+    padding-top:30px;
+    padding-bottom:30px;
+    text-align:center;
+}
+.homePageContent{
+    background-color:#E5E5E5;
+}
+nav{
+    background-color:rgba(0,0,0,0.8);
+    text-align:left;
+    padding-left:33px;
+}
+    nav ul{
+        padding:0;
+        margin:auto;
+        list-style:none;
+        overflow:auto;
+    }
+    nav ul li{
+        float:left;
+    }
+    nav ul li a{
+        text-decoration:none;
+        display:block;
+        padding:10px;
+        color:#FFF;
+    }
+    nav ul li a:hover{
+        opacity:0.3;
+    }
+
+/*Home Page*/
+.description{
+    background-color:rgba(0,0,0,0.8);
+    margin-top:30px;
+    border: 2px solid #000;
+    margin-left:36%;
+    margin-right:36%;
+    overflow:auto;
+}
+#resDescription{
+    color:#FFF;
+    margin-left:10px;
+    margin-right:10px;
+    float:left;
+    text-align:left;    
+}
+footer{
+    margin-top:30px;
+}

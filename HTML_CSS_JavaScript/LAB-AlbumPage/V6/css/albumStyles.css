@@ -1,0 +1,74 @@
+body{
+    font-family: 'Raleway', sans-serif;
+}
+.mainContainer{
+    margin:33px 0;
+}
+.albumImage{
+    /*background:url("../img/David_Bowie_-_Heroes.png") 50% 0 no-repeat;*/
+    /*background-image:url("../img/David_Bowie_-_Heroes.png");
+	background-repeat:no-repeat;
+	background-position:50% 0; top center or top right/left
+    background-color:#333;*/
+    height:37vh; /*Viewport Height*/
+    text-align:center;
+    background-attachment:fixed;
+    /*margin-top:33px;
+    padding-top:33px;
+    padding-bottom:33px;*/
+}
+.albumDetails{
+    text-align:center;
+}
+.albumDetails h2 a{
+    text-decoration:none;
+    color:#000;
+    font-size:27px;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing:3px;
+}
+.albumDetails h2 a:hover{
+    text-decoration:underline;
+    background-color:#000;
+    color:yellow;
+    border:1px solid #000;
+    padding:3px 9px 3px 9px;
+    border-radius:17px;
+    -webkit-box-shadow: -7px 3px 77px 7px #000000;
+    box-shadow: -7px 3px 77px 7px #000000;
+}
+.bandDetails{
+    margin:0 30px 0 30px;
+}
+#bandMP{
+    font-family: 'Oswald', sans-serif;
+    letter-spacing:7px;
+    text-transform:uppercase;
+    text-align:center;
+    opacity:0.7;
+    padding-top:33px;
+    padding-bottom:33px;
+}
+.bandMembersandProcuders{
+    font-style:italic;
+}
+.albumName{
+    font-style:normal;
+    text-align:center;
+    color:#D64229;
+}
+#tableHeading{
+    text-align:center;
+}
+table, tr, th, td{
+    text-align:center;
+    font-style:italic;
+    /*background-color:#3A393B;*/
+    color:#D64229;
+}
+th{
+    background-color:#EEE;
+}
+table:nth-child(odd){
+  background-color:#3A393B;
+}

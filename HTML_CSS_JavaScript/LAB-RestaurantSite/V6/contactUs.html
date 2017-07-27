@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        <meta property="og:title" content="Selahittin Saytaş | Apprentice" />
+        <meta name="author" content="Selahittin Saytaş" />
+        <title>Nagiya Restaurant</title>
+        <!-- Stylsheets -->
+        <link rel="stylesheet" href="css/restaurantStyles.css" />
+        <link href="https://fonts.googleapis.com/css?family=Oswald:300|Raleway" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <style></style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row text-center">
+                <div class="container-fluid">
+                    <header>
+                        <h1>Nagiya Restaurant</h1>
+                    </header>
+                    <div class="page-header" id="news">
+                        <h2>Opening A New Location in Ekkamai Soon! <span class="label label-info">New</span></h2>
+                    </div>
+                </div>
+            </div>
+            <hr/>
+            <div class="row">
+                <nav class="navbar navbar-inverse" id="navigation-menu">
+                    <div class="navbar-header"> <!-- This is the first div that contains the hamburger icon -->
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div> <!-- .navbar-header -->
+                    <div class="collapse navbar-collapse" id="myNavbar"> <!-- This is the second div that contains ul & li for each menu item -->
+                        <ul class="nav navbar-nav navbar-left">
+                            <li><a href="index.html"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+                            <li><a href="menu.html">Menu</a></li>
+                            <li><a href="beverages.html">Beverages</a></li>
+                            <li class="active"><a href="contactUs.html">Contact Us</a></li>
+                        </ul>
+                    </div> <!-- .collapse .navbar-collapse #myNavbar -->
+                </nav>
+            </div>
+            <hr/>
+            <div class="container-fluid">
+                <div class="row">
+                    <article>
+                        <div class="container">
+                            <form class="form-horizontal" action="#" method="POST">
+                                <div class="contactForm">
+                                    <div class="form-group">
+                                        <label class="control-label col-sm-4" id="NameLabel" for="Name">Name: </label>
+                                        <div class="col-sm-5">
+                                            <div class="input-group">
+                                                <input class="form-control" id="Name" name="Name" type="text" placeholder="Please Enter Your Name" required />
+                                                <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label col-sm-4" id="EmailLabel" for="Email">Email: </label>
+                                        <div class="col-sm-5">
+                                            <div class="input-group">
+                                                <input class="form-control" id="Email" name="Email" type="email" placeholder="Please Enter Your Email" required />
+                                                <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label col-sm-4" id="PhoneLabel"for="Phone">Phone: </label>
+                                        <div class="col-sm-5">
+                                            <div class="input-group">
+                                                <input class="form-control" id="Phone" name="Phone" type="text" placeholder="Please Enter Your Phone" required />
+                                                <span class="input-group-addon"><i class="glyphicon glyphicon-phone-alt"></i></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label col-sm-4" id="ReasonForInquiryLabel" for="ReasonForInquiry">Reason For Inquiry:</label>
+                                        <div class="col-sm-5">
+                                            <select class="form-control" id="ReasonForInquiry" name="ReasonForInquiry">
+                                                <option value="Catering">Catering</option>
+                                                <option value="PrivateParty">Private Party</option>
+                                                <option value="Feedback">Feedback</option>
+                                                <option value="Other">Other</option>
+                                            </select>
+                                        </div> <!-- col-sm-5 -->
+                                    </div> <!-- .form-group -->
+                                    <div class="form-group">
+                                        <label class="control-label col-sm-4" id="AdditionalInformationLabel"  for="AdditionalInformation">Additional Information: </label>
+                                        <div class="col-sm-5">
+                                            <div class="input-group">
+                                                <textarea class="form-control" id="AdditionalInformation" name="AdditionalInformation" placeholder="Please Share Your Experiences or Book with Us!" required></textarea>
+                                                <span class="input-group-addon">Text</span>
+                                            </div> <!-- input-group -->
+                                        </div> <!-- .col-sm-5 -->
+                                    </div> <!-- .form-group -->
+                                    <div class="form-group">
+                                        <label class="control-label col-sm-4" id="HaveYouBeenToTheRestaurantLabel"for="HaveYouBeenToTheRestaurant">Have you been to the restaurant? </label>
+                                        <div class="col-sm-5">
+                                            <div class="radio-inline">
+                                                <input id="HaveYouBeenToTheRestaurant" name="HaveYouBeenToTheRestaurant" type="radio" value="No" checked />No
+                                            </div>
+                                            <div class="radio-inline">
+                                                <input id="HaveYouBeenToTheRestaurant" name="HaveYouBeenToTheRestaurant" type="radio" value="Yes" />Yes
+                                            </div>
+                                        </div> <!-- .col-sm-5 -->
+                                    </div> <!-- .form-group -->
+                                    <div class="form-group">
+                                        <label class="control-label col-sm-4" id="BestDaysToContactYouLabel" for="BestDaysToContactYou">Best days to contact you: </label>
+                                    <div class="col-sm-5">
+                                        <div class="checkbox">
+                                            <label class="checkbox-inline">
+                                                <input id="BestDaysToContactYou" name="BestDaysToContactYou" type="checkbox" value="M" checked />M
+                                            </label>
+                                            <label class="checkbox-inline">
+                                                <input id="BestDaysToContactYou" name="BestDaysToContactYou" type="checkbox" value="T" />T
+                                            </label>
+                                            <label class="checkbox-inline">
+                                                <input id="BestDaysToContactYou" name="BestDaysToContactYou" type="checkbox" value="W" />W
+                                            </label>
+                                            <label class="checkbox-inline">
+                                                <input id="BestDaysToContactYou" name="BestDaysToContactYou" type="checkbox" value="T" />T
+                                            </label>
+                                            <label class="checkbox-inline">
+                                                <input id="BestDaysToContactYou" name="BestDaysToContactYou" type="checkbox" value="F" />F
+                                            </label>
+                                        </div> <!-- .checkbox -->
+                                    </div> <!-- col-sm-5 -->
+                                    </div> <!-- .form-group -->
+                                    <div class="form-group" id="submit-button">
+                                        <div class="col-sm-3 col-sm-offset-4">
+                                            <div class="input-group">
+                                                <button class="btn btn-default" type="submit"><span class="input-group-addon">Send Request <i class="glyphicon glyphicon-send"></i></span></button> <!-- <input id="SendRequest" name="SendRequest" type="submit" value="Send Request" /> -->
+                                            </div> <!-- .input-group -->
+                                        </div> <!-- .col-sm-3 .col-sm-offset-4 -->
+                                    </div> <!-- .form-group #submit-button -->
+                                </div> <!-- .contactForm -->
+                            </form> <!-- End of Form .form-horizontal -->
+                        </div> <!-- .container -->
+                    </article> <!-- End of Article -->
+                </div> <!-- .row -->
+            </div> <!-- .container-fluid -->
+            <hr/>
+            <footer>
+                <address>
+                    <div class="text-center">
+                        44/1, Soi Akkapat (Thonglor13)<br/>
+                        Sukhumvit 55 Rd. 10110<br/>
+                        Bangkok, Thailand<br/>
+                        +66(0)2-185-2363
+                    </div>
+                </address>
+            </footer>
+        </div>
+        <!-- JS Scripts -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    </body>
+</html>

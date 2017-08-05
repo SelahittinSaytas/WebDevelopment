@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		<title>Counting Characters 3</title>
+	</head>
+	<body>
+
+	<script type="text/javascript">
+
+		function countingCharacters3(str, search){
+			var count = 0;
+			var numChars = search.length;
+
+			var lastIndex = str.length - numChars;
+
+			for(var index = 0; index <= lastIndex; index++) {
+				var current = str.substring(index, index + numChars);
+				if(current == search) {
+					count++;
+				}
+			}
+
+			console.log("String to search in: " + str);
+			console.log("Characters to find: " + search);
+			console.log("Number of times the character appears: " + count);
+		}
+
+		countingCharacters3("xxaxxxbxx", "xx");
+
+	</script>
+
+	</body>
+</html>

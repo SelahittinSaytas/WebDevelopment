@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		<title>Function Rolling Dice - Randomly Generated Numbers</title>
+	</head>
+	<body>
+
+	<script type="text/javascript">
+
+		function rollDice(){
+			return Math.ceil(Math.random() * (1 + 6 - 1));
+		}
+
+		for (var i = 0; i < 100; i++){
+			document.write(rollDice() + "<br/>");
+			// console.log(rollDice());
+		}
+		
+		/*
+		for (var i = 0; i < 100; i++) {
+			document.write(Math.ceil(Math.random() * (1 + 6 - 1)) + "<br/>");
+			// console.log(Math.ceil(Math.random() * (1 + 6 - 1)));
+			// document.write(Math.random() * (1 + 6 - 1) + "<br/>");
+			// console.log(Math.random() * (1 + 6 - 1));
+			// console.log(Math.random() * (6 - 1) + "<br/>");
+			// document.write(Math.random() * (6 - 1) + "<br/>");
+		}
+		*/
+
+	</script>
+
+	</body>
+</html>

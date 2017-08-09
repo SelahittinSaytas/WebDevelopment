@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        <meta property="og:title" content="Selahittin Saytaş | Apprentice" />
+        <meta name="author" content="Selahittin Saytaş" />
+        <title>Nagiya Restaurant</title>
+        <!-- Stylsheets -->
+        <link rel="stylesheet" href="css/restaurantStyles.css" />
+        <link href="https://fonts.googleapis.com/css?family=Oswald:300|Raleway" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <style>
+            caption{
+                font-weight:bold;
+                font-family:'Oswald', sans-serif;
+                letter-spacing:7px;
+                text-transform:uppercase;
+                font-size:27px;
+            }
+            table th td{
+                border:1px solid #000;
+            }
+            th{
+                text-decoration:underline;
+                text-align:left;
+                margin:0;
+            }
+            tbody td{
+                vertical-align:top;
+            }
+            #drink{
+                text-align:left;
+                padding-left:0px;
+                padding-top:17px;
+            }
+            #price{
+                text-align:right;
+                padding-left:0px;
+                padding-top:17px;
+                text-decoration:underline;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row text-center">
+                <div class="container-fluid">
+                    <header>
+                        <h1>Nagiya Restaurant</h1>
+                    </header>
+                    <div class="page-header" id="news">
+                        <h2>Opening A New Location in Ekkamai Soon! <span class="label label-info">New</span></h2>
+                    </div>
+                </div>
+            </div>
+            <hr/>
+            <div class="row">
+                <nav class="navbar navbar-inverse" id="navigation-menu">
+                    <div class="navbar-header"> <!-- This is the first div that contains the hamburger icon -->
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div> <!-- .navbar-header -->
+                    <div class="collapse navbar-collapse" id="myNavbar"> <!-- This is the second div that contains ul & li for each menu item -->
+                        <ul class="nav navbar-nav navbar-left">
+                            <li><a href="index.html"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+                            <li><a href="menu.html">Menu</a></li>
+                            <li class="active"><a href="beverages.html">Beverages</a></li>
+                            <li><a href="contactUs.html">Contact Us</a></li>
+                        </ul>
+                    </div> <!-- .collapse .navbar-collapse #myNavbar -->
+                </nav>
+            </div>
+            <hr/>
+            <article>
+                <div class="container-fluid">
+                    <div class="row table-responsive">
+                        <div class="table-responsive col-sm-10 col-sm-offset-1">
+                            <table class="table table-striped table-hover">
+                                <caption class="text-center">Beverages</caption>
+                                <thead>
+                                    <tr>
+                                        <th>Beverages</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td id="drink">Root Beer</td>
+                                        <td id="price">$3.00</td>
+                                    </tr>
+                                    <tr>
+                                        <td id="drink">Bottled Water</td>
+                                        <td id="price">$1.25</td>
+                                    </tr>
+                                    <tr>
+                                        <td id="drink">Lemonade</td>
+                                        <td id="price">$1.00</td>
+                                    </tr>
+                                    <tr>
+                                        <td id="drink">Iced Tea</td>
+                                        <td id="price">$ 1.25</td>
+                                    </tr>
+                                </tbody>
+                            </table> <!-- End of Table .table .table-striped .table-hover -->
+                        </div> <!-- .table-responsive .col-sm-10 .col-sm-offset-1 -->
+                    </div> <!-- .row .table-responsive -->
+                </div> <!-- .container-fluid -->
+            </article>
+            <hr/>
+            <footer>
+                <address>
+                    <div class="text-center">
+                        44/1, Soi Akkapat (Thonglor13)<br/>
+                        Sukhumvit 55 Rd. 10110<br/>
+                        Bangkok, Thailand<br/>
+                        +66(0)2-185-2363
+                    </div>
+                </address>
+            </footer>
+        </div>
+        <!-- JS Scripts -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    </body>
+</html>

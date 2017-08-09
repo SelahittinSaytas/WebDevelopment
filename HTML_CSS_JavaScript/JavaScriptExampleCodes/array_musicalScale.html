@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		<title>Array - Musical Scale</title>
+	</head>
+	<body>
+
+	<script type="text/javascript">
+
+		// A collection of musical notes
+		var scale = ["Do", "Re", "Mi", "Fa", "So", "La", "Ti", "Do"];
+
+		// Just the scale
+		// We can use a for loop to loop through the collection
+
+		for(loopCounter_position_index = 0; loopCounter_position_index < scale.length; loopCounter_position_index++){
+			console.log(scale[loopCounter_position_index]);
+		}
+
+		// Now let's make the associations
+
+		var scaleDescriptions = [
+		"A deer - a female deer",
+		"A drop of golden sun",
+		"A name I call myself",
+		"A long, long way to run",
+		"A needle pulling thread",
+		"A note to follow so",
+		"A drink with jam and bread",
+		];
+
+		// Now, let's sing...
+		console.log("When you know the notes to sing\nyo can sing most anything!");
+
+		// We can loop through the 2 collections
+		// Notice that scaleDescriptions does not have a description for the last do
+
+		for(loopCounter_position_index = 0; loopCounter_position_index < scale.length; loopCounter_position_index++){
+			// If we are at the end, we need to change our lyrics
+			if(loopCounter_position_index == (scale.length - 1)){
+				console.log("That will bring us back to..." + scale[loopCounter_position_index]);
+			} else {
+				// For most cases, we willsing the note and its respective description
+				console.log(scale[loopCounter_position_index] + " - " + scaleDescriptions[loopCounter_position_index]);
+			}
+		}
+
+	</script>
+
+	</body>
+</html>

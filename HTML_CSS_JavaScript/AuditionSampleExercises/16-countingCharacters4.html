@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		<title>Counting Characters 4 - Returning The Count</title>
+	</head>
+	<body>
+
+	<script type="text/javascript">
+
+		function countingCharacters4(stringToSearch, search){
+			var count = 0;
+			var numChars = search.length;
+
+			var lastIndex = stringToSearch.length - numChars;
+
+			for(var index = 0; index <= lastIndex; index++){
+				var current = stringToSearch.substring(index, index + numChars); // This is search expected to be found
+				if(current == search) {
+					count++;
+				}
+			}
+			
+			return count;
+		}
+
+		console.log(countingCharacters4("xxaxxxbxx", "xx"));
+		document.write(countingCharacters4("xxaxxxbxx", "xx"));
+
+	</script>
+
+	</body>
+</html>

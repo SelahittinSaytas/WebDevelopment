@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		<title>Cake Exploration</title>
+	</head>
+	<body>
+
+	<script type="text/javascript">
+
+		// Circle shape is used for Start and End
+		// Rectangle shape is used for Steps for The Process
+		// Diamon shape is used for Decision - Yes or No
+
+		// Steps 
+		// Ask the user if they like cake
+		// If they do not like cake display a message that "The cake is a lie"
+		// If they do like cake, ask for their favourite flavour and display a message that they like that flavour
+		
+
+		// Check to see if the user likes cake
+		var likesCake = confirm("Do you like cake?");
+		// If the user likes cake,
+		// Ask for their favourite cake
+		if(likesCake) {
+			var favouriteCake = prompt("What is your favourite flavour?");
+				// Alert them that their favourite cake is 
+				// whatever they inputted
+				// from the '.prompt()' function
+				alert("Your favourite cake is " + favouriteCake);
+		} else {
+			// If the user doesn't like cake, show an alert that the cake is a lie
+			alert("The cake is a lie anyhow.");
+		}
+
+		// Flowcharting - Flowcharts
+
+		/*
+
+		1 - Start
+				|
+		2 - Ask the user if they like cake
+				|
+		3 - Does the user like cake? -----------------> NO -----------------> 4 - Display a message cake is a lie -----------------> End
+				|
+				Yes
+				|
+		5 - Ask the user for their favourite flavour of cake
+				|
+		6 - Display a message that user likes that flavour
+				|
+		7 - End
+
+		*/
+
+	</script>
+
+	</body>
+</html>

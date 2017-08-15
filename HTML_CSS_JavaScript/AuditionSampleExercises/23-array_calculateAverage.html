@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		<title>Array - Calculate Average</title>
+	</head>
+	<body>
+
+	<script type="text/javascript">
+
+		// These are average temperatures that could represent
+		// a week in Cleveland, OH at any given point  of the year
+
+		var averageTemperature = [70, 55, 65, 55, 55, 60, 70];
+
+		function calculateAverageTemperature(temperatureArray){
+
+			// To calculate the average, get the sum of the 'averageTemperatures'
+			// then divide the sum of the temperatures by the number of temperatures 'averageTemperatures.length'
+
+			var sumOfTemperatures = 0;
+
+			// We calculate the sum by looping through the array
+			// updating the total as we go
+
+			for(var loopCounter_position_index = 0; loopCounter_position_index < temperatureArray.length; loopCounter_position_index++){
+				// Using the unary += is a shorthand of saying
+				// 'sumOfTemperatures' = 'sumOfTemperatures' + temperatureArray[loopCounter_position_index];
+				sumOfTemperatures += temperatureArray[loopCounter_position_index];
+			}
+
+			// The number of temperatures is the '.lenth' of the array
+
+			return sumOfTemperatures / temperatureArray.length;
+		}
+
+		// Let's write out the average
+
+		document.write("Cleveland's average temperature is: ");
+		console.log("Cleveland's average temperature is: ");
+		document.write(calculateAverageTemperature(averageTemperature));
+		console.log(calculateAverageTemperature(averageTemperature));
+
+	</script>
+
+	</body>
+</html>

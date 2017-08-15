@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		<title>Sample Audition Exercise</title>
+		<!-- Scripts -->
+		<script type="text/javascript" src="sampleAudition0.js"></script>
+		<!-- Stylesheets -->
+		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	</head>
+	<body>
+		<style type="text/css">
+			.form-control{
+				border:1px solid #000;
+				border-radius:0;
+				width:333px;
+			}
+			.btn{
+				-webkit-box-shadow: 3px 3px 5px 0 #000;
+				box-shadow: 3px 3px 5px 0 #000;
+				margin-left:17px;
+			}
+			.btn:hover{
+				opacity:0.9;
+			}
+		</style>
+		<div class="container">
+			<h1>Sample</h1>
+			<form class="form-horizontal" name="myForm" onsubmit="return validateItems();" onreset="resetForm();">
+				<div class="form-group">
+					<label class="control-label col-sm-2" for="startingNumber">Starting Number:</label>
+					<div class="col-sm-4">
+						<input id="startingNumber" class="form-control" type="number" placeholder="Enter a number" />
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="control-label col-sm-2" for="endingNumber">Ending Number:</label>
+					<div class="col-sm-4">
+						<input id="endingNumber" class="form-control" type="number" placeholder="Enter a number" />
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="control-label col-sm-2" for="stepNumber">Step:</label>
+					<div class="col-sm-4">
+						<input id="stepNumber" class="form-control" type="number" placeholder="Enter a number" />
+					</div>
+				</div>
+				<div class="form-group">
+					<div class="col-sm-offset-1">
+						<button id="displayEvens" class="btn btn-default" type="submit">Display Evens</button>
+						<button id="resetButton" class="btn" type="reset">Reset</button>
+					</div>
+				</div>
+			</form>
+
+			<table id="results" class="table table-striped" style="display:none">
+				<thead>
+					<tr>
+						<td><span id="resultCaption"></span></td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td><span id="evenNumberResult"></span></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</body>
+</html>

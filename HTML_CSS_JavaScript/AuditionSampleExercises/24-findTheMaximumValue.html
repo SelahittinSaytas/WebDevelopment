@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		<title>Find The Maximum Value In An Array</title>
+	</head>
+	<body>
+
+	<script type="text/javascript">
+
+		// Create a function named findMax. It accepts one parameter, an array of numbers.
+		// Inside your function, find the maximum number inside the array (the array may contain negative numbers, 0,
+		// or duplicates). Return the result.
+		
+		function findMax(numbers){
+
+			var maximumNumber = numbers[0];
+
+		  	for(var index = 0; index < numbers.length; index++){
+			    if(numbers[index] >= maximumNumber){
+			    	maximumNumber = numbers[index];
+			    }
+		  	}
+		  	return maximumNumber;
+		}
+
+		console.log(findMax([1,2,3,4,5]) + "<br/>");
+		document.write(findMax([1,2,3,4,5]) + "<br/>");
+
+		console.log(findMax([17,77,9,33,7]) + "<br/>");
+		document.write(findMax([17,77,9,33,7]) + "<br/>");
+
+	</script>
+
+	</body>
+</html>

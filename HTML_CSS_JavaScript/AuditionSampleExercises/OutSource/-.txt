@@ -1,0 +1,11 @@
+var numbers = [1,2,3,4];
+function findMax (numbers){
+    var maxNumber = numbers[0];
+  
+    for (var i = 0; i < numbers.length; i++){
+        if (numbers[i] >= maxNumber){
+            maxNumber = numbers[i];
+        }
+    }
+  return maxNumber;
+}

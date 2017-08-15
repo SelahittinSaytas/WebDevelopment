@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		<title>Collections - Array 2</title>
+	</head>
+	<body>
+
+	<script type="text/javascript">
+
+		var fruits = ["Kiwi", "Rambutan", "Mango", "Tomato"];
+
+		fruits.pop(); // Now, we '.pop()' to take off the last element
+
+		fruits.push("Gooseberry"); // Now, we '.push()' "gooseberry" to the end of the array:
+
+		fruits.shift(); // By calling '.shift()', we take away the first element of the array:
+
+		fruits.unshift("Banana"); // With '.unshift()' "banana", we set it at position 0:
+
+		fruits.slice(0, 2); // The '.slice(0,2)' returns 2 elements, starting from position 0:
+
+		fruits.splice(0, 2); // It returns the elements but does not change the array. '.splice()' on the other hand will return the elements that are removed and change the array.
+
+		fruits[fruits.length] = "Blueberry"; // Another way to add an element to the end of an array without having to create a variable to track the position is by using the length property.
+
+		fruits[2] = "Pineapple"; // If you specify a specific index in an assignment expression, the value at that index will get updated with the new value.
+
+		fruits[5] = "Dragonfruit"; // Unlike many other languages, JavaScript can shrink and grow its array on its own. You can put an element in a specific index and JavaScript will add undefined spots for empty slots between the filled slots
+
+		// fruits.sort(); // Sorts in alphabetical order
+
+		// fruits.join(" - "); // To join in an array separated by a comma
+
+		document.write(fruits.join(", "));
+
+	</script>
+
+	</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+	<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>Simple 'onload' Example With Function - JavaScript And The Browser</title>
+		<script type="text/javascript">
+
+			function greetTheUser(){
+				var userName = prompt("What is your name?");
+				document.getElementById("userName").innerText = userName;
+			}
+
+		</script>
+	</head>
+	<body onload="greetTheUser();">
+
+		<!--
+		We can create our own JavaScript function and call it as part of the onload event 
+		Here is a sample of the onload event calling a function we created:
+		-->
+
+		<div>
+			<h1>Hi, <span id="userName"></span>!</h1>
+		</div>
+
+	<script type="text/javascript"></script>
+
+	</body>
+</html>

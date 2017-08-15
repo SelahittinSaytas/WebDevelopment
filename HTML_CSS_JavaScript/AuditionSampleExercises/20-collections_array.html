@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		<title>Collections - Array</title>
+	</head>
+	<body>
+
+	<script type="text/javascript">
+
+		var friends = ["Aneki", "Quell", "Clarity", "Sleepy", "Roghar", "DM Crimson"];
+
+		var team1 = new Array();
+		var team2 = new Array();
+
+		/*
+		// We can use the '.push()' and '.pop()' functions to add and remove elements from an array
+
+		for(var loopCounter_position_index = 0; loopCounter_position_index < friends.length; loopCounter_position_index++){
+			if(loopCounter_position_index % 2 === 0){
+				team1.push(friends[loopCounter_position_index]);
+			}else{
+				team2.push(friends[loopCounter_position_index]);
+			}
+		}
+
+		document.write(team1 + "</br>");
+		document.write(team2 + "</br>");
+		*/
+
+		/*
+		// From the bottom by shifting them off
+
+		for(var loopCounter_position_index = 0; loopCounter_position_index < friends.length; loopCounter_position_index++){
+			if(loopCounter_position_index % 2 === 0){
+				team1.unshift(friends[loopCounter_position_index]);
+			}else{
+				team2.unshift(friends[loopCounter_position_index]);
+			}
+		}
+
+		document.write(team1 + "</br>");
+		document.write(team2 + "</br>");
+		*/
+
+
+		// We could also do the same exercise using the length property as the index to add elements to the end of an array. That would look like this:
+
+		for(var loopCounter_position_index = 0; loopCounter_position_index < friends.length; loopCounter_position_index++){
+			if(loopCounter_position_index % 2 === 0){
+				team1[team1.length] = friends[loopCounter_position_index];
+			}else{
+				team2[team2.length] = friends[loopCounter_position_index];
+			}
+		}
+
+		document.write(team1.join(", ") + "</br>");
+		document.write(team2.join(", ") + "</br>");
+
+	</script>
+
+	</body>
+</html>

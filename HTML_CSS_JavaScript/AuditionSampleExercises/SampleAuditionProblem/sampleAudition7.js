@@ -16,7 +16,7 @@ function resetForm(){
 	document.forms["myForm"]["startingNumber"].focus();
 }
 
-function toFindEven(startingNumber, endingNumber, stepNumber){
+function toFindEvens(startingNumber, endingNumber, stepNumber){
 	var evenNumbers = new Array();
 	for(var index = startingNumber; index < endingNumber; index += stepNumber){
 		if(index % 2 == 0){
@@ -29,16 +29,9 @@ function toFindEven(startingNumber, endingNumber, stepNumber){
 function validateItems(){
 	clearErrors();
 
-	/*
-	The parseInt() function parses a string and returns an integer.
-	The radix parameter is used to specify which numeral system to be used,
-	for example, a radix of 16 (hexadecimal) indicates that the number in the string
-	should be parsed from a hexadecimal number to a decimal number.
-	*/
-
 	var startingNumber = parseInt(document.forms["myForm"]["startingNumber"].value);
 	var endingNumber = parseInt(document.forms["myForm"]["endingNumber"].value);
-	var stepNumber = parseInt(document.forms["myForm"]["stepNumber"].value);
+	var stepNumber = parseInt(document.forms	["myForm"]["stepNumber"].value);
 
 	if(startingNumber == "" || isNaN(startingNumber)){
 		alert("Starting Number must be filled in with a numeric value!");
@@ -64,7 +57,7 @@ function validateItems(){
 	document.getElementById("results").style.display = "block";
 	document.getElementById("displayEvens").innerText = "Recalculate";
 	document.getElementById("resultCaption").innerText = "Here are the even numbers between " + startingNumber + " and " + endingNumber + " by " + stepNumber + "'s";
-	document.getElementById("evenNumberResult").innerText = toFindEven(startingNumber, endingNumber, stepNumber);
+	document.getElementById("evenNumberResult").innerText = toFindEvens(startingNumber, endingNumber, stepNumber);
 
 	return false;
 }
